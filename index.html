@@ -176,15 +176,21 @@ background-size: cover
 
 * ~~DevOps Engineer at GoDaddy EMEA~~
 
-* ~~Puppet Contributor since 2012~~
-
-* ~~Merging stuff on Vox Pupuli since 2015~~
+* Alex Fisher
 
 * Vox Pupuli PMC member
 
+* Consultant helping companies with their Puppet and Foreman adoption
+
+.right-column[
+  .something2[
+    ![image](afisher.png)
+  ]
+]
 ???
 
-*
+* Big up Tim
+* Despite getting none of my 80's movies references and thinking Madonna wrote American Pie...
 
 ---
 
@@ -207,6 +213,9 @@ background-size: cover
 ???
 
 * We maintain more modules than the company Puppet
+* All the ones starting 'puppet'.  Puppet Inc modules start puppetlabs.  Changing this now would be quite hard!
+* Who uses at least 1 vox module?  Who uses more than 1?  5?  10? I'm using 20 and don't think this is unusual.
+* Please don't keep rewriting your own modules.  If the vox module is close enough, work on getting the extra 10% you need done and merged.
 * This leads to some challenges, which I want to discuss today
 * 88 modules during puppetconf2017, 92 in January 2018
 
@@ -232,7 +241,7 @@ background-size: cover
 
 ???
 
-* 24/7 someone is in the IRC to help you
+* 24/7 someone is in the IRC or slack to help you
 * We've a code of conduct but never had to enforce it
 * Everybody is friendly, which isn't common these days
 
@@ -262,6 +271,7 @@ background-size: cover
 
 * People get easily access to our repos
 * we encourage users to contribute
+* I don't think we've ever turned down a module.  (Some needed a bit more work than others)
 * We're always happy to play with new software (automation scripts, IRC bots...) or adopt new modules
 
 ---
@@ -348,6 +358,10 @@ background-size: cover
 
 .footnote[Alex Fisher for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
+???
+
+* This can be hard!  Lots of us can help you with your puppet, but domain specific knowledge can be missing.
+
 ---
 
 background-image: url(blue-skies.jpg)
@@ -407,10 +421,28 @@ background-size: cover
 
 ???
 
-* Someone sad in the past, a good talk always contains scientific charts
+* Someone said in the past, a good talk always contains scientific charts
+* This isn't a very exciting graph though
 * Currently 130 people with merge permissions
 
   * We were 80 in November 2016
+
+---
+
+background-image: url(blue-skies.jpg)
+background-size: cover
+
+.left-column[
+## Vox Pupuli
+### What?
+### Who?
+]
+
+.right-column[
+.nowidth[
+![imagefoo](better-graphs.jpg)
+]
+]
 
 ---
 
@@ -483,6 +515,7 @@ background-size: cover
 
 ???
 
+* Keeping your tests running when the ecosystem keeps evolving is hard. (Easier these days with PDK)
 * Who tried to fix rubocop warnings in a module and couldn't fix all?
 * rubocop is listed twice because it's twice the pain
 * Shout out to hailee/HAIL9000 who fixed maaaaaaaany rubocop errors in the mongodb module for many days
@@ -529,6 +562,7 @@ background-size: cover
 * Keeping generic files like Gemfile/Rakefile in sync is pain, if done by hand
 * modulesync saves us sooo much time
 * modulesync is similar to `pdk sync`
+* Maybe we'll convert soon?
 
 ---
 
@@ -550,7 +584,7 @@ background-size: cover
 
 * Puppet Inc. sponsors us 20 concurrent travis slots
 
-* rpsec-puppet on common Puppet*Ruby versions
+* rspec-puppet on common Puppet*Ruby versions
 
 * release modules to the forge
 
@@ -708,6 +742,10 @@ background-size: cover
 
 .footnote[Alex Fisher for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
 
+???
+
+* What is the SFC? Conservancy is a charity that provides a non-profit home and infrastructure for FLOSS projects.
+
 ---
 
 background-image: url(blue-skies.jpg)
@@ -736,6 +774,12 @@ background-size: cover
 ]
 
 .footnote[Alex Fisher for [@voxpupuliorg](https://twitter.com/voxpupuliorg)]
+
+???
+
+* Anyone can become a callobrator
+* This has never gone wrong.
+* We've got so much out of just trusting people
 
 ---
 
@@ -803,7 +847,8 @@ background-size: cover
 
 ???
 
-* travis cheets for 100: closing/reopen a PR will retrigger travis
+* travis cheats for 100: closing/reopen a PR will retrigger travis
+* Who's done this?
 * A project admin can do this in the travis UI, outside-contributors can't
 * close/reopen can be triggered by the PR author
 
@@ -899,6 +944,7 @@ background-size: cover
 ???
 
 * for a clean history we want people to use a correct email address
+* We can't actually enfore this, but github to provide 'private' addresses too.
 
 ---
 
@@ -943,6 +989,7 @@ background-size: cover
 
 * often people ask us to migrate a dead module into our namespace
 * we head out to the maintainer and ask for that
+* Occasionally, this doesn't work and those rare cases we sometimes fork a module.
 
 ---
 
@@ -1028,6 +1075,7 @@ background-size: cover
 
 ???
 
+* Congratulations to Igor who couldn't be here. 4 week old daughter.
 * people are scared about making released because it could break things
 * Maintainers are scared to break the environments from their users
 * release as often as possible. Less changes per release -> less broken releases
@@ -1056,6 +1104,7 @@ background-size: cover
 ???
 
 * people are often scared to merge breaking changes. Merging them is totally okay if you do proper versioning
+* we might try to group breaking changes
 * we don't delete broken releases and try to fix it, we just do a new release
 
 ---
@@ -1084,6 +1133,7 @@ background-size: cover
 ???
 
 * working closely together, listen to users, always be constructive, don't blame others for mistakes, we all break stuff from time to time
+* Tim has this quote on his CV!
 * the 'listen' gem issue
 
 ---
